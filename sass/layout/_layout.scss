@@ -19,22 +19,25 @@ body {
   //Centers the container
   margin: 8rem auto;
   background-color: var(--color-grey-light-2);
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-dark);
 
   min-height: 80rem;
   display: flex;
   flex-direction: column;
+
+  border-bottom: var(--color-grey-light-2);
 }
 
 .header {
 }
 
 .content {
+  display: flex;
 }
 
-//
 .sidebar {
 }
 
 .hotel-overview {
+  flex-grow: 1;
 }

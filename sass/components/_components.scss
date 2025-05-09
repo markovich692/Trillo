@@ -3,7 +3,6 @@
 
 .logo {
   height: 3.25rem;
-  width: 3.25rem;
 }
 
 ////////////////////////////////////
@@ -12,12 +11,12 @@
   &__input {
   }
 
-  &__btn {
+  &__button {
   }
 
   &__icon {
-    height: 3.25rem;
-    width: 3.25rem;
+    height: 2rem;
+    width: 3.2rem;
   }
 }
 
@@ -28,8 +27,8 @@
   }
 
   &__icon {
-    height: 3.25rem;
-    width: 3.25rem;
+    height: 2.25rem;
+    width: 2.25rem;
   }
 
   &__notification {
@@ -39,8 +38,7 @@
   }
 
   &__user-photo {
-    height: 3.25rem;
-    width: 3.25rem;
+    height: 3.75rem;
 
     border-radius: 50%;
   }

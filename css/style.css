@@ -47,11 +47,20 @@ body {
   min-height: 80rem;
   display: flex;
   flex-direction: column;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
   border-bottom: var(--color-grey-light-2);
 }
 
 .content {
   display: flex;
+}
+
+.sidebar {
+  flex-grow: 1;
 }
 
 .hotel-overview {

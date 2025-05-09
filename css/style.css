@@ -66,6 +66,7 @@ body {
 
 .hotel-overview {
   background-color: #fff;
+  background-color: orangered;
   flex: 1;
 }
 

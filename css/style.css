@@ -32,11 +32,20 @@ html {
   height: 3.25rem;
 }
 
+.search {
+  background-color: orangered;
+}
 .search__icon {
   height: 2rem;
   width: 3.2rem;
 }
 
+.user-nav {
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .user-nav__icon {
   height: 2.25rem;
   width: 2.25rem;

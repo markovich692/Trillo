@@ -8,6 +8,8 @@
 ////////////////////////////////////
 //SEARCH-NAV
 .search {
+  background-color: orangered;
+
   &__input {
   }
 
@@ -23,6 +25,11 @@
 ////////////////////////////////////
 //USER-NAV
 .user-nav {
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   &__icon-box {
   }
 

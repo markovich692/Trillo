@@ -16,8 +16,10 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="img/logo.png" alt="Trillo logo" class="logo" />
+        <!-- LOGO -->
+        <img class="logo" src="img/logo.png" alt="Trillo logo" />
 
+        <!-- FORM -->
         <form action="#" class="search">
           <input
             type="text"
@@ -25,13 +27,42 @@
             placeholder="Search hotels"
           />
           <button class="search__btn">
-            <svg>
+            <svg class="search__icon">
               <use href="img/sprite.svg#icon-magnifying-glass"></use>
             </svg>
           </button>
         </form>
 
-        <div>Notifications</div>
+        <!-- NAVIGATOR -->
+
+        <nav class="user-nav">
+          <!-- FIRST BOX -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+
+          <!-- SECOND BOX -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">13</span>
+          </div>
+
+          <!-- THIRD BOX -->
+          <div class="user-nav__user">
+            <img
+              class="user-nav__user-photo"
+              src="img/user.jpg"
+              alt="user profile photo"
+            />
+
+            <span class="user-nav__user-name">Jonas</span>
+          </div>
+        </nav>
       </header>
 
       <div class="content">

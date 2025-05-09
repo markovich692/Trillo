@@ -28,6 +28,25 @@ html {
   font-size: 62.5%;
 }
 
+.logo {
+  height: 3.25rem;
+  width: 3.25rem;
+}
+
+.search__icon {
+  height: 3.25rem;
+  width: 3.25rem;
+}
+
+.user-nav__icon {
+  height: 3.25rem;
+  width: 3.25rem;
+}
+.user-nav__user-photo {
+  height: 3.25rem;
+  width: 3.25rem;
+  border-radius: 50%;
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -53,6 +72,8 @@ body {
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
+  display: flex;
+  justify-content: space-between;
 }
 
 .content {

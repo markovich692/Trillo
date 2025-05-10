@@ -1,11 +1,7 @@
-//Write a function that takes an array of numbers and
-//returns the sum of the numbers. The numbers can be negative or non-integer.
-//If the array does not contain any numbers then you should return 0.
+// Can you find the needle in the haystack?
 
-function sum(numbers) {
-  if (!numbers.length) return 0;
+// Write a function findNeedle() that takes an array full of junk but containing one "needle"
 
-  return numbers.reduce((acc, num) => {
-    return acc + num;
-  }, 0);
-}
+// After your function finds the needle it should return a message (as a string) that says:
+
+// "found the needle at position " plus the index it found the needle, so:

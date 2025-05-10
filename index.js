@@ -1,29 +1,11 @@
-// Can you find the needle in the haystack?
+// Your team is writing a fancy new text editor
+// and you've been tasked with implementing the line numbering.
 
-// Write a function findNeedle() that takes an array full of junk but containing one "needle"
+// Write a function which takes a list of strings and
+// returns each line prepended by the correct number.
 
-// After your function finds the needle it should return a message (as a string) that says:
+// The numbering starts at 1. The format is n: string.
+//  Notice the colon and space in between.
 
-// "found the needle at position " plus the index it found the needle, so:
-
-const findNeedle = function (arr) {
-  const needlePosition = arr.findIndex((el) => {
-    return el === "needle";
-  });
-
-  if (!needlePosition) return;
-
-  return `found the needle at position ${needlePosition}`;
-};
-
-const testing = findNeedle([
-  "hay",
-  "junk",
-  "hay",
-  "hay",
-  "moreJunk",
-  "needle",
-  "randomJunk",
-]);
-
-console.log(testing);
+// [] --> []
+// ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]

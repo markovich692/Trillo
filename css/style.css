@@ -34,6 +34,7 @@ html {
 
 .search {
   background-color: orangered;
+  flex: 0 0 40%;
 }
 .search__icon {
   height: 2rem;

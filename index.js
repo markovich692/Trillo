@@ -9,3 +9,15 @@
 
 // [] --> []
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+
+var number = function (array) {
+  //your awesome code here
+
+  return array.map((el, i) => {
+    return `${i + 1}: ${el}`;
+  });
+};
+
+const test = number(["a", "b", "c"]);
+
+console.log(test);

@@ -1,23 +1,29 @@
-// Your team is writing a fancy new text editor
-// and you've been tasked with implementing the line numbering.
+// Description:
+// Given a time in a time format class, return
+//  it without year, month and day.
 
-// Write a function which takes a list of strings and
-// returns each line prepended by the correct number.
+// It should return a string including milliseconds
+//  with 3 decimals.
 
-// The numbering starts at 1. The format is n: string.
-//  Notice the colon and space in between.
+// Example:
 
-// [] --> []
-// ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+// new Date(2016, 2, 8, 16, 42, 59)
+//Should return:
+// "16:42:59,000"
 
-var number = function (array) {
-  //your awesome code here
+// function convert(...args) {
+//   console.log(args);
+//   const dateFormat = new Date(...args);
+//   console.log(dateFormat);
+// }
 
-  return array.map((el, i) => {
-    return `${i + 1}: ${el}`;
-  });
-};
+function convert(...time) {
+  const hours = time[3];
+  const minutes = time[4];
 
-const test = number(["a", "b", "c"]);
+  const secs = new Intl.NumberFormat("en-US").format(time[5] * 1000);
 
-console.log(test);
+  console.log(`${hours}:${minutes}:${secs}`);
+}
+
+convert(2016, 2, 8, 16, 42, 59);

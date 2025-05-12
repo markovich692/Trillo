@@ -25,13 +25,17 @@
     border-radius: 100px;
     width: 90%;
     transition: all 0.2s;
-    margin-right: -3.5rem;
+    margin-right: -3.25rem;
 
     &:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3);
     }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
   }
 
   &__button {

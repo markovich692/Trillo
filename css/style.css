@@ -49,11 +49,14 @@ html {
   border-radius: 100px;
   width: 90%;
   transition: all 0.2s;
-  margin-right: -3.5rem;
+  margin-right: -3.25rem;
 }
 .search__input:focus {
   outline: none;
   width: 100%;
+  background-color: var(--color-grey-light-3);
+}
+.search__input:focus + .search__button {
   background-color: var(--color-grey-light-3);
 }
 .search__button {

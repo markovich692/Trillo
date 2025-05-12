@@ -34,7 +34,7 @@
     }
   }
 
-  &__input:focus + &__button {
+  &__input:focus + .search__button {
     background-color: var(--color-grey-light-3);
   }
 

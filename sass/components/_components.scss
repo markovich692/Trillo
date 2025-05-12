@@ -9,7 +9,6 @@
 ////////////////////////////////////
 //SEARCH-NAV
 .search {
-  background-color: orangered;
   //Not growing, shrinking
   flex: 0 0 40%;
   display: flex;
@@ -30,14 +29,15 @@
 
     &:focus {
       outline: none;
-      background-color: var(--color-grey-light-3);
       width: 100%;
+      background-color: var(--color-grey-light-3);
     }
   }
 
   &__button {
     border: none;
     background-color: var(--color-grey-light-2);
+    border-radius: 100px;
 
     &:focus {
       outline: none;

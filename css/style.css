@@ -34,7 +34,6 @@ html {
 }
 
 .search {
-  background-color: orangered;
   flex: 0 0 40%;
   display: flex;
   justify-content: center;
@@ -54,12 +53,13 @@ html {
 }
 .search__input:focus {
   outline: none;
-  background-color: var(--color-grey-light-3);
   width: 100%;
+  background-color: var(--color-grey-light-3);
 }
 .search__button {
   border: none;
   background-color: var(--color-grey-light-2);
+  border-radius: 100px;
 }
 .search__button:focus {
   outline: none;

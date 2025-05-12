@@ -25,7 +25,13 @@
     border-radius: 100px;
     width: 90%;
     transition: all 0.2s;
-    margin-right: -3.25rem;
+    margin-right: -3.5rem;
+    // margin-right: -3.25rem;
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
 
     &:focus {
       outline: none;
@@ -41,6 +47,7 @@
   &__button {
     border: none;
     background-color: var(--color-grey-light-2);
+
     border-radius: 100px;
 
     &:focus {
@@ -55,6 +62,7 @@
   &__icon {
     height: 2rem;
     width: 3.2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 

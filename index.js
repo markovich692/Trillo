@@ -1,25 +1,22 @@
-// Description:
-// Make a program that filters a list of strings and
-// returns a list with only your friends name in it.
-// If a name has exactly 4 letters in it, you can be
-// sure that it has to be a friend of yours! Otherwise,
-//  you can be sure he's not...
+// 1
+// 3     5
+// 7     9    11
+// 13    15    17    19
+// 21    23    25    27    29
+// ...
 
-// Input = ["Ryan", "Kieran", "Jason", "Yous"]
-// Output = ["Ryan", "Yous"]
+// Calculate the sum of the numbers in the nth row of
+// this triangle (starting at index 1) e.g.: (Input --> Output)
 
-// Input = ["Peter", "Stephen", "Joe"]
-// Output = []
+// 1 -->  1
+// 2 --> 3 + 5 = 8
 
-function friend(friends) {
-  //your code here
-  const friendOfMine = friends.filter((name) => {
-    return name.length === 4;
-  });
+function rowSumOddNumbers(n) {
+  // TODO
 
-  return friendOfMine.length ? friendOfMine : [];
+  //   console.log(n * n - (n - 1));
+
+  console.log(n * n - (n - 1));
 }
 
-const result = friend(["Ryanff", "Kieran", "Jason", "Yousff"]);
-
-console.log(result);
+rowSumOddNumbers(5);

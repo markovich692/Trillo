@@ -12,6 +12,9 @@
   background-color: orangered;
   //Not growing, shrinking
   flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__input {
     font-family: inherit;

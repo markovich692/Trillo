@@ -89,7 +89,7 @@ html {
 .user-nav > * {
   padding: 0 2rem;
   cursor: pointer;
-  align-self: stretch;
+  height: 100%;
   display: flex;
   align-items: center;
 }

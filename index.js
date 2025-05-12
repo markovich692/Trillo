@@ -12,11 +12,15 @@
 // 2 --> 3 + 5 = 8
 
 function rowSumOddNumbers(n) {
-  // TODO
+  let arr = [];
 
-  //   console.log(n * n - (n - 1));
+  for (let i = 0; i < n; i++) {
+    let addNum = i === 0 ? n * n - (n - 1) : arr[i - 1] + 2;
 
-  console.log(n * n - (n - 1));
+    arr.push(addNum);
+  }
+
+  return arr.reduce((acc, num) => acc + num, 0);
 }
 
-rowSumOddNumbers(5);
+const result = rowSumOddNumbers(2);

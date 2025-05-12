@@ -70,10 +70,8 @@
 //USER-NAV
 .user-nav {
   align-self: stretch;
-  background-color: yellowgreen;
   display: flex;
   align-items: center;
-  // justify-content: space-between;
 
   & > * {
     padding: 0 2rem;
@@ -88,7 +86,7 @@
   }
 
   &__icon-box {
-    // position: relative;
+    position: relative;
   }
 
   &__icon {
@@ -107,6 +105,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
   }
 
   &__user {
@@ -119,8 +120,5 @@
     height: 3.75rem;
     border-radius: 50%;
     margin-right: 1rem;
-  }
-
-  &__user-name {
   }
 }

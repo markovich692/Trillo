@@ -10,3 +10,16 @@
 
 // Input = ["Peter", "Stephen", "Joe"]
 // Output = []
+
+function friend(friends) {
+  //your code here
+  const friendOfMine = friends.filter((name) => {
+    return name.length === 4;
+  });
+
+  return friendOfMine.length ? friendOfMine : [];
+}
+
+const result = friend(["Ryanff", "Kieran", "Jason", "Yousff"]);
+
+console.log(result);

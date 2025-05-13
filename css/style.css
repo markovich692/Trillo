@@ -161,6 +161,8 @@ html {
   display: flex;
   align-items: center;
   padding: 1.5rem 3rem;
+  position: relative;
+  z-index: 10;
 }
 .side-nav__icon {
   width: 1.75rem;

@@ -136,9 +136,6 @@ html {
 .side-nav__item {
   position: relative;
 }
-.side-nav__item--active {
-  background-color: var(--color-primary);
-}
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem;
 }
@@ -153,7 +150,7 @@ html {
   transform: scaleY(0);
   transition: transform 0.2s, width cubic-bezier(1, 0, 0, 1) 0.4s 0.2s;
 }
-.side-nav__item:hover::before {
+.side-nav__item:hover::before, .side-nav__item--active::before {
   transform: scaleY(1);
   width: 100%;
 }
@@ -166,6 +163,9 @@ html {
   padding: 1.5rem 3rem;
   position: relative;
   z-index: 10;
+}
+.side-nav__item:active::before {
+  background-color: var(--color-primary-light);
 }
 .side-nav__icon {
   width: 1.75rem;

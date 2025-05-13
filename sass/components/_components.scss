@@ -128,10 +128,6 @@
   &__item {
     position: relative;
 
-    &--active {
-      background-color: var(--color-primary);
-    }
-
     &:not(:last-child) {
       margin-bottom: 0.5rem;
     }
@@ -149,7 +145,8 @@
     transition: transform 0.2s, width cubic-bezier(1, 0, 0, 1) 0.4s 0.2s;
   }
 
-  &__item:hover::before {
+  &__item:hover::before,
+  &__item--active::before {
     transform: scaleY(1);
     width: 100%;
   }
@@ -164,6 +161,10 @@
     padding: 1.5rem 3rem;
     position: relative;
     z-index: 10;
+  }
+
+  &__item:active::before {
+    background-color: var(--color-primary-light);
   }
 
   &__link:hover,

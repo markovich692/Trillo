@@ -121,14 +121,18 @@
 //SIDEBAR
 
 .side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+
   &__item {
-    display: flex;
-    align-items: center;
+    padding: 1.5rem;
   }
 
   &__link:link,
   &__link:visited {
     text-decoration: none;
+    //
     display: flex;
     align-items: center;
   }
@@ -140,6 +144,9 @@
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: #fff;
+    //
+    margin-right: 1rem;
   }
 
   &__text {

@@ -148,7 +148,7 @@ html {
   width: 3px;
   background-color: var(--color-primary);
   transform: scaleY(0);
-  transition: transform 0.2s, width 0.4s 0.2s;
+  transition: transform 0.2s, width cubic-bezier(1, 0, 0, 1) 0.4s 0.2s;
 }
 .side-nav__item:hover::before {
   transform: scaleY(1);

@@ -128,6 +128,10 @@
   &__item {
     position: relative;
 
+    &--active {
+      background-color: var(--color-primary);
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
     }

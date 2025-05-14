@@ -202,7 +202,10 @@
   padding: 2rem;
 
   &__heading {
+    font-size: 2.25rem;
     text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
   }
 
   &__stars {
@@ -226,7 +229,6 @@
   &__rating {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
   }
 

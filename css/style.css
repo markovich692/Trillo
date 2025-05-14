@@ -211,9 +211,13 @@ html {
   fill: var(--color-primary);
 }
 .overview__location {
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   padding: 3rem;
+}
+.overview__icon-location {
+  margin-right: 0.5rem;
 }
 .overview__rating {
   align-self: stretch;

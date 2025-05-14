@@ -197,18 +197,21 @@
 
 .overview {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   &__heading {
   }
 
   &__stars {
+    display: flex;
+    align-items: center;
   }
 
   &__icon-star,
   &__icon-location {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
     fill: var(--color-primary);
   }
 

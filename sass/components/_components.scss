@@ -186,5 +186,10 @@
   padding: 2.5rem;
 }
 
-.hotel-overview {
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+  }
 }

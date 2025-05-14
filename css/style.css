@@ -181,6 +181,13 @@ html {
   padding: 2.5rem;
 }
 
+.gallery {
+  display: flex;
+}
+.gallery__photo {
+  width: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -227,6 +234,8 @@ body {
 .hotel-overview {
   background-color: #fff;
   background-color: orangered;
+  display: flex;
+  flex-direction: column;
   height: 80rem;
   flex: 1;
 }

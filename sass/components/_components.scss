@@ -196,23 +196,23 @@
 }
 
 .overview {
+  display: flex;
+  align-items: center;
+
   &__heading {
   }
 
   &__stars {
   }
 
-  &__icon-star {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  &__location {
-  }
-
+  &__icon-star,
   &__icon-location {
     width: 1.5rem;
     height: 1.5rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
   }
 
   &__rating {

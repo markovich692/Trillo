@@ -189,13 +189,14 @@ html {
   display: block;
 }
 
-.overview__icon-star {
-  width: 1.5rem;
-  height: 1.5rem;
+.overview {
+  display: flex;
+  align-items: center;
 }
-.overview__icon-location {
+.overview__icon-star, .overview__icon-location {
   width: 1.5rem;
   height: 1.5rem;
+  fill: var(--color-primary);
 }
 body {
   font-family: "Open Sans", sans-serif;

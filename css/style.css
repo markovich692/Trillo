@@ -186,8 +186,17 @@ html {
 }
 .gallery__photo {
   width: 100%;
+  display: block;
 }
 
+.overview__icon-star {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.overview__icon-location {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -233,7 +242,6 @@ body {
 
 .hotel-overview {
   background-color: #fff;
-  background-color: orangered;
   display: flex;
   flex-direction: column;
   height: 80rem;

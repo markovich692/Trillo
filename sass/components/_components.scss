@@ -191,5 +191,39 @@
 
   &__photo {
     width: 100%;
+    display: block;
   }
+}
+
+.overview {
+  &__heading {
+  }
+
+  &__stars {
+  }
+
+  &__icon-star {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__location {
+  }
+
+  &__icon-location {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__rating {
+  }
+
+  &__rating-average {
+  }
+
+  &__rating-count {
+  }
+}
+
+.btn-inline {
 }

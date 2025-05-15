@@ -9,4 +9,12 @@
 
 function digitize(n) {
   //code here
+  const arr = String(n)
+    .split("")
+    .reverse()
+    .map((el) => +el);
+
+  return arr;
 }
+
+digitize(12345);

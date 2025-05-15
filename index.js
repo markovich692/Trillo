@@ -18,15 +18,19 @@
 
 function persistence(num) {
   //code me
+  let add = 0;
 
   while (num >= 10) {
     num = num
       .toString()
       .split("")
       .reduce((acc, digit) => acc * Number(digit), 1);
+
+    console.log(num);
+    add++;
   }
 
-  return num;
+  return add;
 }
 
-console.log(persistence(39));
+persistence(39);

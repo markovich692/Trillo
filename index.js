@@ -1,28 +1,12 @@
 // Description:
-// This time no story, no theory. The examples
-// below show you how to write function accum:
+// Given a random non-negative number, you
+//  have to return the digits of this
+// number within an array in reverse order.
 
-// accum("abcd") -> "A-Bb-Ccc-Dddd"
-// accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-// accum("cwAt") -> "C-Ww-Aaa-Tttt"
+// Example (Input => Output):
+// 35231 => [1,3,2,5,3]
+// 0     => [0]
 
-// The parameter of accum is a string which includes
-// only letters from a..z and A..Z.
-
-function accum(s) {
-  // your code
-
-  const upperCase = s
-    .split("")
-    .map((el, i) => {
-      return el.toUpperCase();
-    })
-    .map((el, i) => {
-      return el + el.toLowerCase().repeat(i);
-    })
-    .join("-");
-
-  console.log(upperCase);
+function digitize(n) {
+  //code here
 }
-
-accum("abcd");

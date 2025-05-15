@@ -20,3 +20,25 @@
 // countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
 // countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
 // countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
+
+function countSmileys(arr) {
+  let count = 0;
+
+  arr.forEach((el) => {
+    const elSplit = el.split("");
+
+    const correct =
+      elSplit.length === 3 &&
+      (elSplit[0] === ":" || elSplit[0] === ";") &&
+      (elSplit[1] === "-" || elSplit[1] === "~") &&
+      (elSplit[2] === ")" || elSplit[2] === "D");
+
+    console.log(correct);
+    if (!correct) return;
+    count++;
+  });
+
+  return count;
+}
+
+countSmileys([":D", ":~)", ";~D", ":)"]);

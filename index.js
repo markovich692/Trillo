@@ -1,20 +1,17 @@
 // Description:
-// Given a random non-negative number, you
-//  have to return the digits of this
-// number within an array in reverse order.
+// Write a function, persistence, that
+// takes in a positive parameter num and
+// returns its multiplicative persistence,
+//  which is the number of times you must
+//  multiply the digits in num until you
+//  reach a single digit.
 
-// Example (Input => Output):
-// 35231 => [1,3,2,5,3]
-// 0     => [0]
+// For example (Input --> Output):
+// 39 --> 3 (because 3*9 = 27, 2*7 = 14, 1*4 = 4
+// and 4 has only one digit, there are 3 multiplications)
 
-function digitize(n) {
-  //code here
-  const arr = String(n)
-    .split("")
-    .reverse()
-    .map((el) => +el);
+// 999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12,
+// and finally 1*2 = 2, there are 4 multiplications)
 
-  return arr;
-}
-
-digitize(12345);
+// 4 --> 0 (because 4 is already a one-digit number,
+// there is no multiplication)

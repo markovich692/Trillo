@@ -28,17 +28,21 @@ function countSmileys(arr) {
     const elSplit = el.split("");
 
     const correct =
-      elSplit.length === 3 &&
-      (elSplit[0] === ":" || elSplit[0] === ";") &&
-      (elSplit[1] === "-" || elSplit[1] === "~") &&
-      (elSplit[2] === ")" || elSplit[2] === "D");
+      (elSplit.length === 3 &&
+        (elSplit[0] === ":" || elSplit[0] === ";") &&
+        (elSplit[1] === "-" || elSplit[1] === "~" || elSplit[1] === "") &&
+        (elSplit[2] === ")" || elSplit[2] === "D")) ||
+      (elSplit.length === 2 &&
+        (elSplit[0] === ":" || elSplit[0] === ";") &&
+        (elSplit[1] === ")" || elSplit[1] === "D"));
 
     console.log(correct);
     if (!correct) return;
+
     count++;
   });
 
-  return count;
+  console.log(count);
 }
 
 countSmileys([":D", ":~)", ";~D", ":)"]);

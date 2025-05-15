@@ -15,3 +15,18 @@
 
 // 4 --> 0 (because 4 is already a one-digit number,
 // there is no multiplication)
+
+function persistence(num) {
+  //code me
+
+  while (num >= 10) {
+    num = num
+      .toString()
+      .split("")
+      .reduce((acc, digit) => acc * Number(digit), 1);
+  }
+
+  return num;
+}
+
+console.log(persistence(39));

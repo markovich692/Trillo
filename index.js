@@ -12,9 +12,17 @@
 function accum(s) {
   // your code
 
-  const splittedString = s.split("");
+  const upperCase = s
+    .split("")
+    .map((el, i) => {
+      return el.toUpperCase();
+    })
+    .map((el, i) => {
+      return el + el.toLowerCase().repeat(i);
+    })
+    .join("-");
 
-  console.log(splittedString);
+  console.log(upperCase);
 }
 
 accum("abcd");

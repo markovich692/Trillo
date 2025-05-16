@@ -290,6 +290,13 @@ html {
   flex: 0 0 50%;
   margin-bottom: 0.7rem;
 }
+.list__item::before {
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  background-image: url(../img/chevron-thin-right.svg);
+}
 
 .recommend {
   display: flex;

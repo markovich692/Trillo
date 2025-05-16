@@ -167,10 +167,6 @@
     background-color: var(--color-primary-light);
   }
 
-  &__link:hover,
-  &__link:active {
-  }
-
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -315,6 +311,14 @@
   &__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem;
+  }
+
+  &__item::before {
+    content: "";
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../img/chevron-thin-right.svg);
   }
 }
 

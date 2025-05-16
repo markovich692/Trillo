@@ -316,8 +316,8 @@
   &__item::before {
     content: "";
     display: inline-block;
-    height: 2rem;
-    width: 2rem;
+    height: 1rem;
+    width: 1rem;
 
     //OLDER VERSION
     // background-image: url(../img/chevron-thin-right.svg);
@@ -335,18 +335,25 @@
 
 .recommend {
   display: flex;
+  font-size: 1.3rem;
   justify-content: space-between;
   align-items: center;
+  color: var(--color-grey-dark-3);
+
   &__count {
   }
 
   &__friends {
-    display: flex;
   }
 
   &__photo {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+    border: 0.3rem solid #fff;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
   }
 }

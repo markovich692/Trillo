@@ -288,6 +288,7 @@ html {
 }
 .list__item {
   flex: 0 0 50%;
+  margin-bottom: 0.7rem;
 }
 
 .recommend {

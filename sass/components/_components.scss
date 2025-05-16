@@ -295,7 +295,7 @@
 ///////////////////////////
 //PARAGRAPH
 
-.paragraph:not(:last-child) {
+.paragraph:not(:last-of-type) {
   margin-bottom: 2rem;
 }
 
@@ -304,6 +304,11 @@
 
 .list {
   list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
   &__item {
   }
 }

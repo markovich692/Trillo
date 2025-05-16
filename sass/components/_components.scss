@@ -309,7 +309,11 @@
   border-top: var(--line);
   border-bottom: var(--line);
 
+  display: flex;
+  flex-wrap: wrap;
+
   &__item {
+    flex: 0 0 50%;
   }
 }
 
@@ -317,9 +321,19 @@
 //RECOMMEND
 
 .recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   &__count {
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
   }
 }

@@ -318,7 +318,15 @@
     display: inline-block;
     height: 2rem;
     width: 2rem;
-    background-image: url(../img/chevron-thin-right.svg);
+
+    //OLDER VERSION
+    // background-image: url(../img/chevron-thin-right.svg);
+    // background-size: cover;
+
+    //NEWER VERSION
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
   }
 }
 

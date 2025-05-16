@@ -295,7 +295,9 @@ html {
   display: inline-block;
   height: 2rem;
   width: 2rem;
-  background-image: url(../img/chevron-thin-right.svg);
+  background-color: var(--color-primary);
+  -webkit-mask-image: url(../img/chevron-thin-right.svg);
+  -webkit-mask-size: cover;
 }
 
 .recommend {

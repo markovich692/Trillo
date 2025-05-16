@@ -291,3 +291,30 @@
     box-shadow: none;
   }
 }
+
+///////////////////////////
+//PARAGRAPH
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+///////////////////////////
+//LIST
+
+.list {
+  list-style: none;
+  &__item {
+  }
+}
+
+///////////////////////////
+//RECOMMEND
+
+.recommend {
+  &__count {
+  }
+
+  &__photo {
+  }
+}

@@ -344,9 +344,6 @@
     margin-right: auto;
   }
 
-  &__friends {
-  }
-
   &__photo {
     box-sizing: content-box;
     width: 4rem;
@@ -357,5 +354,44 @@
     &:not(:last-child) {
       margin-right: -1.5rem;
     }
+  }
+}
+
+///////////////////////////
+//REVIEWS
+
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+
+  &__text {
+    margin-bottom: 2.5rem;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    display: block;
+  }
+
+  &__user-date {
+  }
+
+  &__user-rating {
   }
 }

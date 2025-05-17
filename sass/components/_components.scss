@@ -463,6 +463,8 @@
   );
   color: #fff;
 
+  overflow: hidden;
+
   &__visible {
     display: inline-block;
     padding: 2rem 7.5rem;
@@ -470,9 +472,17 @@
 
   &__invisible {
     display: inline-block;
-    padding: 2rem 7.5rem;
+    padding: 2rem 0;
     position: absolute;
     left: 0;
     top: -100%;
   }
+
+  // &:hover {
+  //   & .btn__invisible {
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //   }
+  // }
 }

@@ -429,6 +429,10 @@ html {
 .btn:hover .btn__invisible {
   top: 0;
 }
+.btn:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
+}
 
 body {
   font-family: "Open Sans", sans-serif;

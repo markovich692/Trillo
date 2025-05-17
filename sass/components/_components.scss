@@ -450,6 +450,7 @@
 //CTA BUTTON
 
 .btn {
+  position: relative;
   font-size: 1.5rem;
   border: none;
   font-weight: 300;
@@ -463,9 +464,15 @@
   color: #fff;
 
   &__visible {
+    display: inline-block;
     padding: 2rem 7.5rem;
   }
 
   &__invisible {
+    display: inline-block;
+    padding: 2rem 7.5rem;
+    position: absolute;
+    left: 0;
+    top: -100%;
   }
 }

@@ -465,6 +465,8 @@
   position: relative;
   overflow: hidden;
 
+  transition: all 0.2s;
+
   & > * {
     width: 100%;
     height: 100%;
@@ -484,6 +486,12 @@
   }
 
   &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+
     & .btn__visible {
       transform: translateY(100%);
     }

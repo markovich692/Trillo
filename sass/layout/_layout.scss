@@ -15,13 +15,13 @@ body {
 }
 
 .container {
-  width: 120rem;
+  max-width: 120rem;
   //Centers the container
   margin: 8rem auto;
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
 
-  min-height: 80rem;
+  min-height: 50rem;
   display: flex;
   flex-direction: column;
 }
